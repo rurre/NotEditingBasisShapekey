@@ -1,9 +1,9 @@
 bl_info = {
     "name": "Shapekey Warning",
     "author": "Ruuubick",
-    "version": (1, 0),
+    "version": (1, 0, 1),
     "blender": (2, 80, 0),
-    "location": "3D View > Sidebar > Shapekey Warning",
+    "location": "3D View > Sidebar > View > Shapekey Warning",
     "description": "Displays a warning when editing non-Basis shapekeys",
     "category": "3D View",
 }
@@ -41,7 +41,7 @@ class ShapeKeyWarning_PT_Panel(Panel):
     bl_idname = "SHAPEKEY_PT_warning_panel"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = 'Shapekey Warning'
+    bl_category = 'View'
 
     def draw(self, context):
         layout = self.layout
